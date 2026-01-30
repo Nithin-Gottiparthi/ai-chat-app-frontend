@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen text-white;
+  background: radial-gradient(circle at top left, #1f3cff55, transparent 35%),
+    radial-gradient(circle at bottom right, #00ffd555, transparent 35%),
+    linear-gradient(120deg, #050810, #070a14);
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  /* ✅ stops right side page scrollbar */
+}
+
+/* Hide scrollbar but keep scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
